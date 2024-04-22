@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="programm">
+    <div class="left_side_calculator">
+      <div class="data">
+        <span>Bill</span>
+        <input type="text" id="bill" placeholder="$0.00">
+      </div>
+      <div class="data_options">
+        <span>Select Tip</span>
+        <div class="buttons">
+          <button class="btn">5</button>
+          <button class="btn">10</button>
+          <button class="btn">15</button>
+          <button class="btn">25</button>
+          <button class="btn">50</button>
+          <input class="btncustome" type="text" placeholder="80%">
+        </div>
+      </div>
+      <div class="data_input_people">
+        <div class="txt_data">
+          <span>Number of People</span>
+          <span class="error" id="error">Can't be zero</span>
+        </div>
+        <input type="text" id="people" placeholder="0">
+      </div>
+    </div>
+    <div class="right_side_calculator">
+      <div class="ceils">
+        <div class="ceil total">
+          <div class="title">
+            <span class="title_txt">Tip Amount</span>
+            <span class="title_txt2">/ person</span>
+          </div>
+          <span class="value" id="tip">$0.00</span>
+        </div>
+        <div class="ceil total">
+          <div class="title">
+            <span class="title_txt">Total</span>
+            <span class="title_txt2">/ person</span>
+          </div>
+          <span class="value" id="total">$0.00</span>
+        </div>
+      </div>
+      <button class="btn_reset" id="reset">RESET</button>
+  </div>
+  <script src="index.js"></script>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
